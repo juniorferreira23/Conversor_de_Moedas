@@ -1,31 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Conversor de Moedas</ion-title>
+    <ion-title>
+      Conversor de Moeda
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content>
   <ion-item>
-    <ion-label position="stacked">Moeda Base</ion-label>
-    <ion-select [(ngModel)]="baseCurrency" placeholder="Selecione a moeda base">
-      <ion-select-option *ngFor="let currency of currencies" [value]="currency">
-        {{ currency }}
-      </ion-select-option>
+    <ion-label>Moeda Base</ion-label>
+    <ion-select [(ngModel)]="baseCurrency">
+      <ion-select-option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</ion-select-option>
     </ion-select>
   </ion-item>
 
   <ion-item>
-    <ion-label position="stacked">Moeda Alvo</ion-label>
-    <ion-select [(ngModel)]="targetCurrency" placeholder="Selecione a moeda alvo">
-      <ion-select-option *ngFor="let currency of currencies" [value]="currency">
-        {{ currency }}
-      </ion-select-option>
+    <ion-label>Moeda Alvo</ion-label>
+    <ion-select [(ngModel)]="targetCurrency">
+      <ion-select-option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</ion-select-option>
     </ion-select>
   </ion-item>
 
   <ion-item>
-    <ion-label position="stacked">Valor</ion-label>
-    <ion-input [(ngModel)]="amount" type="number" placeholder="Digite o valor"></ion-input>
+    <ion-label>Valor</ion-label>
+    <ion-input type="number" [(ngModel)]="amount" (ngModelChange)="updateConversion()"></ion-input>
   </ion-item>
 
   <ion-button expand="block" (click)="convert()">Converter</ion-button>
@@ -35,7 +33,7 @@
       <ion-card-title>Resultado</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      {{ amount }} {{ baseCurrency }} = {{ convertedAmount | number:'1.2-2' }} {{ targetCurrency }}
+      <p>{{ amount }} {{ baseCurrency }} = {{ convertedAmount | number:'1.2-2' }} {{ targetCurrency }}</p>
     </ion-card-content>
   </ion-card>
 </ion-content>
