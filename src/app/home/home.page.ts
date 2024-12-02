@@ -12,7 +12,7 @@ export class HomePage implements OnInit {
   amount: number = 1;
   result: number = 0;
   rates: { [key: string]: number } = {}; // Tipagem para rates
-  currencies: string[] = ['USD', 'BRL', 'EUR', 'GBP', 'JPY']; // Lista de moedas disponíveis
+  currencies: string[] = ['USD', 'EUR', 'BRL', 'GBP', 'JPY', 'AUD', 'CAD', 'CHF', 'CNY', 'SEK']; // Lista de moedas disponíveis
   convertedAmount: number | null = null; // Resultado da conversão
 
   constructor(private currencyService: CurrencyService) {}
