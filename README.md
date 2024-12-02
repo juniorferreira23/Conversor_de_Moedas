@@ -33,3 +33,10 @@ Este é um aplicativo simples de conversão de moedas construído com **Ionic**.
     ```
     ionic serve
     ```
+
+### Equipe
+
+- Elizeu Leoncio Ferreira Junior - 01576238
+- Thiago José Pereira da Mota - 01587816
+- Matheus de Oliveira Lins Mendes - 01618966
+- Italo Jocemar Fernandes de Lira - 01629621
