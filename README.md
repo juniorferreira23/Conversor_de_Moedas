@@ -40,3 +40,8 @@ Este é um aplicativo simples de conversão de moedas construído com **Ionic**.
 - Thiago José Pereira da Mota - 01587816
 - Matheus de Oliveira Lins Mendes - 01618966
 - Italo Jocemar Fernandes de Lira - 01629621
+
+### Licença
+- **Creative Commons Attribution 4.0 International (CC BY 4.0)**
+
+
