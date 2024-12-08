@@ -2,6 +2,8 @@
 
 Este é um aplicativo simples de conversão de moedas construído com **Ionic**. Ele permite que os usuários convertem valores entre diferentes moedas, utilizando a API de taxas de câmbio para obter as cotações atuais.
 
+![alt text](image.png)
+
 ## Funcionalidades
 
 - Selecione a moeda base (como USD, EUR, BRL, etc.).
