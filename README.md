@@ -43,5 +43,6 @@ Este é um aplicativo simples de conversão de moedas construído com **Ionic**.
 
 ### Licença
 - **Creative Commons Attribution 4.0 International (CC BY 4.0)**
+- https://github.com/juniorferreira23/Conversor_de_Moedas/blob/main/LICENSE
 
 
