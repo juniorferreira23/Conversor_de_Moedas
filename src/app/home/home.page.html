@@ -1,8 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Conversor de Moeda
-    </ion-title>
+    <ion-title>Conversor de Moeda</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -23,7 +21,11 @@
 
   <ion-item>
     <ion-label position="stacked">Valor</ion-label>
-    <ion-input type="number" [(ngModel)]="amount" (ngModelChange)="updateConversion()"></ion-input>
+    <ion-input
+      type="number"
+      [(ngModel)]="amount"
+      (ngModelChange)="convertedAmount = null">
+    </ion-input>
   </ion-item>
 
   <ion-button expand="block" (click)="convert()">Converter</ion-button>

@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-import { AppComponent } from './app.component';
+import { IonicModule } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http'; // Importação do HttpClientModule
+import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'; // Importar o HttpClientModule
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,9 +11,9 @@ import { HttpClientModule } from '@angular/common/http'; // Importação do Http
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule, // Necessário para chamadas HTTP
+    HttpClientModule, // Adicionar o HttpClientModule
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
